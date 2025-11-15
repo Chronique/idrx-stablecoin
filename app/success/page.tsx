@@ -1,59 +1,68 @@
 "use client";
 
-import { useComposeCast } from '@coinbase/onchainkit/minikit';
-import { minikitConfig } from "../../minikit.config";
+import { useEffect } from "react";
+import { useMiniKit } from "@coinbase/onchainkit/minikit";
+import Image from "next/image";
 import styles from "./page.module.css";
 
-export default function Success() {
+export default function Home() {
+  const { isFrameReady, setFrameReady, context } = useMiniKit();
 
-  const { composeCastAsync } = useComposeCast();
-  
-  const handleShare = async () => {
-    try {
-      const text = `Yay! I just joined the waitlist for ${minikitConfig.miniapp.name.toUpperCase()}! `;
-      
-      const result = await composeCastAsync({
-        text: text,
-        embeds: [process.env.NEXT_PUBLIC_URL || ""]
-      });
+  useEffect(() => {
+    if (!isFrameReady) setFrameReady();
+  }, [isFrameReady, setFrameReady]);
 
-      // result.cast can be null if user cancels
-      if (result?.cast) {
-        console.log("Cast created successfully:", result.cast.hash);
-      } else {
-        console.log("User cancelled the cast");
-      }
-    } catch (error) {
-      console.error("Error sharing cast:", error);
-    }
-  };
+  const userName = context?.user?.displayName || "there";
 
   return (
     <div className={styles.container}>
-      <button className={styles.closeButton} type="button">
-        ✕
-      </button>
-      
-      <div className={styles.content}>
-        <div className={styles.successMessage}>
-          <div className={styles.checkmark}>
-            <div className={styles.checkmarkCircle}>
-              <div className={styles.checkmarkStem}></div>
-              <div className={styles.checkmarkKick}></div>
-            </div>
-          </div>
-          
-          <h1 className={styles.title}>Welcome to the {minikitConfig.miniapp.name.toUpperCase()}!</h1>
-          
-          <p className={styles.subtitle}>
-            You&apos;re in! We&apos;ll notify you as soon as we launch.<br />
-            Get ready to experience the future of onchain marketing.
-          </p>
+      <button className={styles.closeButton}>✕</button>
 
-          <button onClick={handleShare} className={styles.shareButton}>
-            SHARE
-          </button>
+      <div className={styles.content}>
+        {/* Header */}
+        <div className={styles.header}>
+          <Image
+            src="/idrx-logo-official.png"  // nanti upload logo biru glossy ini
+            alt="IDRX"
+            width={140}
+            height={140}
+            priority
+            className={styles.logo}
+          />
+          <h1 className={styles.title}>
+            INDONESIAN RUPIAH-<br />BACKED STABLECOIN
+          </h1>
+          <p className={styles.subtitle}>
+            Designed for rapid, global transactions and 24/7 access to financial markets, 
+            IDRX is a regulated digital asset that offers seamless conversions and can be 
+            redeemed at a fixed rate for Indonesian Rupiah.
+          </p>
         </div>
+
+        {/* CTA Buttons */}
+        <div className={styles.buttons}>
+          <a href="https://app.idrx.co" className={styles.primaryBtn}>
+            Get IDRX
+          </a>
+          <a href="https://docs.idrx.co" className={styles.secondaryBtn}>
+            Read Docs
+          </a>
+        </div>
+
+        {/* Quick Links */}
+        <div className={styles.links}>
+          <a href="https://home.idrx.co/en">Why IDRX</a>
+          <a href="https://home.idrx.co/en#features">Features</a>
+          <a href="https://docs.idrx.co">Docs</a>
+          <a href="https://home.idrx.co/en#utility">Utility</a>
+          <a href="https://home.idrx.co/en#faq">FAQ</a>
+          <a href="https://app.idrx.co/register">Register</a>
+        </div>
+
+        {/* Footer */}
+        <footer className={styles.footer}>
+          <p>Hai {userName} 👋 • IDRX — Rupiah Stablecoin Resmi Indonesia</p>
+        </footer>
       </div>
     </div>
   );
