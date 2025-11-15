@@ -14,8 +14,8 @@ export const minikitConfig = {
   miniapp: {
     version: "1",
     name: "IDRX",
-    subtitle: "Indonesian Rupiah-Backed Stablecoin",
-    description: "Designed for rapid, global transactions and 24/7 access to financial markets, IDRX is a regulated digital asset that offers seamless conversions and can be redeemed at a fixed rate for Indonesian Rupiah.",
+    subtitle: "indonesian-rupiah-backed-stablecoin",  // ← Fix: lowercase + hyphen, no spaces (37 chars)
+    description: "designed-for-rapid-global-transactions-and-24-7-access-to-financial-markets-idrx-is-a-regulated-digital-asset-that-offers-seamless-conversions-and-can-be-redeemed-at-a-fixed-rate-for-indonesian-rupiah",  // ← Fix: lowercase + hyphen, no tanda baca/spasi (169 chars)
     screenshotUrls: [`${ROOT_URL}/screenshot-portrait.png`],
     iconUrl: `${ROOT_URL}/idrx-logo-official.png`,
     splashImageUrl: `${ROOT_URL}/idrx-splash.png`,
@@ -23,11 +23,11 @@ export const minikitConfig = {
     homeUrl: ROOT_URL,
     webhookUrl: `${ROOT_URL}/api/webhook`,
     primaryCategory: "finance",
-    tags: ["stablecoin", "idrx", "rupiah", "indonesia", "web3", "defi"],
+    tags: ["stablecoin", "idrx", "rupiah", "indonesia", "web3"],  // ← Fix: lowercase only, no spasi/emoji (max 5 tags, masing-masing <20 chars)
     heroImageUrl: `${ROOT_URL}/idrx-splash.png`,
     tagline: "Get IDRX",
-    ogTitle: "IDRX - Indonesian Rupiah Stablecoin",
-    ogDescription: "Get IDRX: Rupiah-backed stablecoin for seamless Web3 transactions.",
+    ogTitle: "idrx-indonesian-rupiah-stablecoin",  // ← Fix: lowercase + hyphen, no spasi (32 chars)
+    ogDescription: "get-idrx-rupiah-backed-stablecoin-for-seamless-web3-transactions",  // ← Fix: lowercase + hyphen, no tanda baca/spasi (68 chars)
     ogImageUrl: `${ROOT_URL}/idrx-splash.png`,
   },
 } as const;
