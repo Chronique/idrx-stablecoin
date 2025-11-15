@@ -14,8 +14,8 @@ export const minikitConfig = {
   miniapp: {
     version: "1",
     name: "IDRX",
-    subtitle: "indonesian-rupiah-backed-stablecoin",  // ← Fix: lowercase + hyphen, no spaces (37 chars)
-    description: "designed-for-rapid-global-transactions-and-24-7-access-to-financial-markets-idrx-is-a-regulated-digital-asset-that-offers-seamless-conversions-and-can-be-redeemed-at-a-fixed-rate-for-indonesian-rupiah",  // ← Fix: lowercase + hyphen, no tanda baca/spasi (169 chars)
+    subtitle: "rupiah-backed-stablecoin",  // ← Fix: lowercase + hyphen, no spaces (37 chars)
+    description: "idrx-is-indonesian-rupiah-backed-stablecoin-regulated-1-1-pegged-fast-global-transactions-24-7-access-and-instant-conversion",  // ← Fix: lowercase + hyphen, no tanda baca/spasi (169 chars)
     screenshotUrls: [`${ROOT_URL}/screenshot-portrait.png`],
     iconUrl: `${ROOT_URL}/idrx-logo-official.png`,
     splashImageUrl: `${ROOT_URL}/idrx-splash.png`,
@@ -26,7 +26,7 @@ export const minikitConfig = {
     tags: ["stablecoin", "idrx", "rupiah", "indonesia", "web3"],  // ← Fix: lowercase only, no spasi/emoji (max 5 tags, masing-masing <20 chars)
     heroImageUrl: `${ROOT_URL}/idrx-splash.png`,
     tagline: "Get IDRX",
-    ogTitle: "idrx-indonesian-rupiah-stablecoin",  // ← Fix: lowercase + hyphen, no spasi (32 chars)
+    ogTitle: "idrx-rupiah-stablecoin", // ← Fix: lowercase + hyphen, no spasi (32 chars)
     ogDescription: "get-idrx-rupiah-backed-stablecoin-for-seamless-web3-transactions",  // ← Fix: lowercase + hyphen, no tanda baca/spasi (68 chars)
     ogImageUrl: `${ROOT_URL}/idrx-splash.png`,
   },
