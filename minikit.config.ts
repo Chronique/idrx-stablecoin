@@ -6,10 +6,11 @@ const ROOT_URL =
  * MiniApp configuration object. Must follow the Farcaster MiniApp specification.
  */
 export const minikitConfig = {
-  accountAssociation: {
-    header: "",
-    payload: "",
-    signature: ""
+  "accountAssociation": {
+   "header": "eyJmaWQiOjM0NTk5MywidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDExMDkxOGJiRmQ2ODE3NjRhMTU3MDU4MUVBNTI0N2ZmYjk5M0NGYzAifQ",
+   "payload": "eyJkb21haW4iOiJpZHJ4LXN0YWJsZWNvaW4udmVyY2VsLmFwcCJ9",
+   "signature": "MKikHEiicCTLGxjnPmI08a4YDZYV/kdXcbKj/1r7UntxbtZBMr4LYWZmawNeyhrDCZskGZ7U37fBfT30yEYnbhw="
+  }
   },
   miniapp: {
     version: "1",
