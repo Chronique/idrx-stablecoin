@@ -21,24 +21,29 @@
   z-index: 10;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  transition: all 0.2s;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .content {
-  padding: 90px 24px 60px;   /* naikkan atas biar logo nggak terlalu deket close button */
+  padding: 100px 24px 60px;
   text-align: center;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;   /* ini kunci biar footer selalu di bawah */
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
-.header {
+.hero {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 90%;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -48,45 +53,57 @@
   border-radius: 50%;
   margin-bottom: 32px;
   box-shadow: 0 12px 40px rgba(0, 100, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .title {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 900;
-  line-height: 1.15;
-  margin: 0 0 20px 0;
-  background: linear-gradient(90deg, #ffffff, #a0d8ff);
+  line-height: 1.1;
+  margin: 0 0 24px 0;
+  background: linear-gradient(90deg, #ffffff 0%, #a0d8ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
-  font-size: 16.5px;
-  line-height: 1.65;
-  opacity: 0.92;
-  max-width: 340px;
-  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.buttons {
+.ctaButtons {
   display: flex;
   flex-direction: column;
   gap: 16px;
   max-width: 300px;
-  margin: 0 auto 48px;
+  margin: 0 auto;
 }
 
 .primaryBtn {
   background: #0070f3;
   color: white;
-  padding: 17px 32px;
+  padding: 18px 40px;
   border-radius: 50px;
   font-weight: 700;
   font-size: 17px;
   text-decoration: none;
-  box-shadow: 0 8px 25px rgba(0, 112, 243, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 112, 243, 0.4);
+  display: block;
+  transition: all 0.2s;
+}
+
+.primaryBtn:hover {
+  background: #0060d0;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(0, 112, 243, 0.5);
 }
 
 .secondaryBtn {
@@ -94,28 +111,52 @@
   text-decoration: underline;
   font-weight: 600;
   font-size: 15px;
+  display: block;
+  transition: color 0.2s;
+}
+
+.secondaryBtn:hover {
+  color: #ffffff;
+}
+
+.linksSection {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #a0d8ff;
 }
 
 .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 24px;
   justify-content: center;
   font-size: 14px;
-  margin-bottom: 32px;
 }
 
 .links a {
   color: #a0d8ff;
   text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.2s;
 }
 
 .links a:hover {
-  text-decoration: underline;
+  background: rgba(160, 216, 255, 0.1);
+  color: #ffffff;
 }
 
 .footer {
   font-size: 14px;
-  opacity: 0.8;
-  padding-bottom: 20px;
+  opacity: 0.7;
+  margin-top: auto;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
