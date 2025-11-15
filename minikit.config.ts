@@ -2,6 +2,9 @@ const ROOT_URL =
   process.env.NEXT_PUBLIC_URL ||
   (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000');
 
+/**
+ * MiniApp configuration object. Must follow the Farcaster MiniApp specification.
+ */
 export const minikitConfig = {
   accountAssociation: {
     header: "",
@@ -22,7 +25,7 @@ export const minikitConfig = {
     primaryCategory: "finance",
     tags: ["stablecoin", "idrx", "rupiah", "indonesia", "web3", "defi"],
     heroImageUrl: `${ROOT_URL}/idrx-splash.png`,
-    tagline: "Get IDRX",                       // ← ini yang kamu mau
+    tagline: "Get IDRX",
     ogTitle: "IDRX - Indonesian Rupiah Stablecoin",
     ogDescription: "Get IDRX: Rupiah-backed stablecoin for seamless Web3 transactions.",
     ogImageUrl: `${ROOT_URL}/idrx-splash.png`,
