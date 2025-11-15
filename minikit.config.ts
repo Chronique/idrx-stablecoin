@@ -1,6 +1,10 @@
+const ROOT_URL =
+  process.env.NEXT_PUBLIC_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000');
+
 export const minikitConfig = {
   accountAssociation: {
-    header: "eyJmaWqiOjM0NTk5MywidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDExMDkxOGJiRmQ2ODE3NjRhMTU3MDU4MUVBNTI0N2ZmYjk5M0NGYzAifQ",
+    header: "eyJmaWQiOjM0NTk5MywidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDExMDkxOGJiRmQ2ODE3NjRhMTU3MDU4MUVBNTI0N2ZmYjk5M0NGYzAifQ",
     payload: "eyJkb21haW4iOiJpZHJ4LXN0YWJsZWNvaW4udmVyY2VsLmFwcCJ9",
     signature: "MKikHEiicCTLGxjnPmI08a4YDZYV/kdXcbKj/1r7UntxbtZBMr4LYWZmawNeyhrDCZskGZ7U37fBfT30yEYnbhw="
   },
@@ -21,6 +25,6 @@ export const minikitConfig = {
     tagline: "Get IDRX",
     ogTitle: "idrx-rupiah-stablecoin",
     ogDescription: "get-idrx-rupiah-backed-stablecoin-for-seamless-web3-transactions",
-    ogImageUrl: `${ROOT_URL}/idrx-splash.png",
+    ogImageUrl: `${ROOT_URL}/idrx-splash.png`,
   },
 } as const;
