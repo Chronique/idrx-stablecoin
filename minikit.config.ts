@@ -11,7 +11,7 @@ export const minikitConfig = {
     signature: "MKikHEiicCTLGxjnPmI08a4YDZYV/kdXcbKj/1r7UntxbtZBMr4LYWZmawNeyhrDCZskGZ7U37fBfT30yEYnbhw="
   },
   baseBuilder: {
-    ownerAddress: "0x4fbA95e4772be6d37a0c931D06570Fe2c9675524"  // ← ini yang wajib ditambah!
+    ownerAddress: "0x4fbA95e4772be6d37a0c931D06570Fe2c9675524"  // ← tambahan ini biar Base Build lolos
   },
   miniapp: {
     version: "1",
@@ -23,7 +23,7 @@ export const minikitConfig = {
     splashImageUrl: `${ROOT_URL}/idrx-splash.png`,
     splashBackgroundColor: "#0a1f3d",
     homeUrl: ROOT_URL,
-    webhookUrl: `${ROOT_URL}/api/webhook`,
+    webhookUrl: `${ROOT_URL}/api/webhook",
     primaryCategory: "finance",
     tags: ["stablecoin", "idrx", "rupiah", "indonesia", "web3"],
     heroImageUrl: `${ROOT_URL}/idrx-splash.png`,
