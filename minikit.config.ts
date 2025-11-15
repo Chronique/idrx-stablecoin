@@ -11,7 +11,8 @@ export const minikitConfig = {
     signature: "MKikHEiicCTLGxjnPmI08a4YDZYV/kdXcbKj/1r7UntxbtZBMr4LYWZmawNeyhrDCZskGZ7U37fBfT30yEYnbhw=",
   },
   baseBuilder: {
-    ownerAddress: "0x4fbA95e4772be6d37a0c931D06570Fe2c9675524"  // ← wallet-mu yang sign association
+    ownerAddress: "0x4fba95e4772be6d37a0c931D00570Fe2c9675524"
+},  // ← wallet-mu yang sign association
   },
   miniapp: {
     version: "1",
