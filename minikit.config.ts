@@ -8,11 +8,10 @@ export const minikitConfig = {
   accountAssociation: {
     header: "eyJmaWQiOjM0NTk5MywidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDExMDkxOGJiRmQ2ODE3NjRhMTU3MDU4MUVBNTI0N2ZmYjk5M0NGYzAifQ",
     payload: "eyJkb21haW4iOiJpZHJ4LXN0YWJsZWNvaW4udmVyY2VsLmFwcCJ9",
-    signature: "MKikHEiicCTLGxjnPmI08a4YDZYV/kdXcbKj/1r7UntxbtZBMr4LYWZmawNeyhrDCZskGZ7U37fBfT30yEYnbhw=",
+    signature: "MKikHEiicCTLGxjnPmI08a4YDZYV/kdXcbKj/1r7UntxbtZBMr4LYWZmawNeyhrDCZskGZ7U37fBfT30yEYnbhw="
   },
   baseBuilder: {
     ownerAddress: "0x4fba95e4772be6d37a0c931D00570Fe2c9675524"
-},  // ← wallet-mu yang sign association
   },
   miniapp: {
     version: "1",
@@ -31,7 +30,6 @@ export const minikitConfig = {
     tagline: "Get IDRX",
     ogTitle: "idrx-rupiah-stablecoin",
     ogDescription: "get-idrx-rupiah-backed-stablecoin-for-seamless-web3-transactions",
-    ogImageUrl: `${ROOT_URL}/idrx-splash.png`,
-    noindex: true  // ← tambahan opsional dari docs buat privacy
+    ogImageUrl: `${ROOT_URL}/idrx-splash.png`
   }
 } as const;
