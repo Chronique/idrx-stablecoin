@@ -20,14 +20,14 @@ export const minikitConfig = {
     description: "Designed for rapid, global transactions and 24/7 access to financial markets, IDRX is a regulated digital asset that offers seamless conversions and can be redeemed at a fixed rate for Indonesian Rupiah.",
     screenshotUrls: [`${ROOT_URL}/screenshot-portrait.png`],
     iconUrl: `${ROOT_URL}/idrx-logo-official.png`,  // Ganti ke logo biru glossy-mu
-    splashImageUrl: `${ROOT_URL}/idrx-hero.png`,    // Nanti upload hero image biru
-    splashBackgroundColor: "#0a1f3d",               // Biru gelap sesuai gradient desain
+    splashImageUrl: `${ROOT_URL}/idrx-splash.png`,
+    splashBackgroundColor: "#0a1f3d"
     homeUrl: ROOT_URL,
     webhookUrl: `${ROOT_URL}/api/webhook`,
     primaryCategory: "finance",                     // Cocok buat stablecoin
     tags: ["stablecoin", "idrx", "rupiah", "indonesia", "web3", "defi"],
-    heroImageUrl: `${ROOT_URL}/idrx-hero.png`, 
-    tagline: "1 IDRX = 1 Rupiah • Regulated & Transparent",
+    heroImageUrl: `${ROOT_URL}/idrx-splash.png`,
+    tagline: "Get IDRX"
     ogTitle: "IDRX - Indonesian Rupiah Stablecoin",
     ogDescription: "Get IDRX: Rupiah-backed stablecoin for seamless Web3 transactions.",
     ogImageUrl: `${ROOT_URL}/idrx-hero.png`,
