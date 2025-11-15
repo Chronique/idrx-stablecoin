@@ -15,22 +15,21 @@ export const minikitConfig = {
   },
   miniapp: {
     version: "1",
-    name: "Cubey", 
-    subtitle: "Your AI Ad Companion", 
-    description: "Ads",
+    name: "IDRX", 
+    subtitle: "Indonesian Rupiah-Backed Stablecoin", 
+    description: "Designed for rapid, global transactions and 24/7 access to financial markets, IDRX is a regulated digital asset that offers seamless conversions and can be redeemed at a fixed rate for Indonesian Rupiah.",
     screenshotUrls: [`${ROOT_URL}/screenshot-portrait.png`],
-    iconUrl: `${ROOT_URL}/blue-icon.png`,
-    splashImageUrl: `${ROOT_URL}/blue-hero.png`,
-    splashBackgroundColor: "#000000",
+    iconUrl: `${ROOT_URL}/idrx-logo-official.png`,  // Ganti ke logo biru glossy-mu
+    splashImageUrl: `${ROOT_URL}/idrx-hero.png`,    // Nanti upload hero image biru
+    splashBackgroundColor: "#0a1f3d",               // Biru gelap sesuai gradient desain
     homeUrl: ROOT_URL,
     webhookUrl: `${ROOT_URL}/api/webhook`,
-    primaryCategory: "social",
-    tags: ["marketing", "ads", "quickstart", "waitlist"],
-    heroImageUrl: `${ROOT_URL}/blue-hero.png`, 
-    tagline: "",
-    ogTitle: "",
-    ogDescription: "",
-    ogImageUrl: `${ROOT_URL}/blue-hero.png`,
+    primaryCategory: "finance",                     // Cocok buat stablecoin
+    tags: ["stablecoin", "idrx", "rupiah", "indonesia", "web3", "defi"],
+    heroImageUrl: `${ROOT_URL}/idrx-hero.png`, 
+    tagline: "1 IDRX = 1 Rupiah • Regulated & Transparent",
+    ogTitle: "IDRX - Indonesian Rupiah Stablecoin",
+    ogDescription: "Get IDRX: Rupiah-backed stablecoin for seamless Web3 transactions.",
+    ogImageUrl: `${ROOT_URL}/idrx-hero.png`,
   },
 } as const;
-
