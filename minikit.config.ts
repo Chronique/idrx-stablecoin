@@ -6,18 +6,18 @@ const ROOT_URL =
 
 export const minikitConfig = {
   accountAssociation: {
-    header:
-      "eyJmaWQiOjM0NTk5MywidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDExMDkxOGJiRmQ2ODE3NjRhMTU3MDU4MUVBNTI0N2ZmYjk5M0NGYzAifQ",
+    header: "eyJmaWQiOjM0NTk5MywidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDExMDkxOGJiRmQ2ODE3NjRhMTU3MDU4MUVBNTI0N2ZmYjk5M0NGYzAifQ",
     payload: "eyJkb21haW4iOiJpZHJ4LXN0YWJsZWNvaW4udmVyY2VsLmFwcCJ9",
-    signature:
-      "MKikHEiicCTLGxjnPmI08a4YDZYV/kdXcbKj/1r7UntxbtZBMr4LYWZmawNeyhrDCZskGZ7U37fBfT30yEYnbhw=",
+    signature: "MKikHEiicCTLGxjnPmI08a4YDZYV/kdXcbKj/1r7UntxbtZBMr4LYWZmawNeyhrDCZskGZ7U37fBfT30yEYnbhw="
+  },
+  baseBuilder: {
+    ownerAddress: "0x4fbA95e4772be6d37a0c931D06570Fe2c9675524"  // ← ini yang wajib ditambah!
   },
   miniapp: {
     version: "1",
     name: "IDRX",
     subtitle: "rupiah-backed-stablecoin",
-    description:
-      "idrx-is-indonesian-rupiah-backed-stablecoin-regulated-1-1-pegged-fast-global-transactions-24-7-access-and-instant-conversion",
+    description: "idrx-is-indonesian-rupiah-backed-stablecoin-regulated-1-1-pegged-fast-global-transactions-24-7-access-and-instant-conversion",
     screenshotUrls: [`${ROOT_URL}/screenshot-portrait.png`],
     iconUrl: `${ROOT_URL}/idrx-logo-official.png`,
     splashImageUrl: `${ROOT_URL}/idrx-splash.png`,
@@ -29,8 +29,7 @@ export const minikitConfig = {
     heroImageUrl: `${ROOT_URL}/idrx-splash.png`,
     tagline: "Get IDRX",
     ogTitle: "idrx-rupiah-stablecoin",
-    ogDescription:
-      "get-idrx-rupiah-backed-stablecoin-for-seamless-web3-transactions",
-    ogImageUrl: `${ROOT_URL}/idrx-splash.png`,
-  },
+    ogDescription: "get-idrx-rupiah-backed-stablecoin-for-seamless-web3-transactions",
+    ogImageUrl: `${ROOT_URL}/idrx-splash.png`
+  }
 } as const;
